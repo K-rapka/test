@@ -15,7 +15,7 @@ body{
 }
 .calculator{
     background-color: rgb(143, 232, 202);
-    color: rgb(6, 72, 58);
+    color:rgb(6, 72, 58);
     font-size: 50px;
     padding: 20px;
     margin: 10px;
@@ -26,13 +26,29 @@ body{
     justify-content: space-between;
     background-color: rgb(143, 232, 202);
 }
-.calc-head button{
-    content: url();
+.calc-theme{
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
 }
+
+.calc-theme.light::before{
+    content: url(/icons/light_mode.svg);
+    width: 0;
+    height: 0;
+}
+.calc-theme.dark::before{
+    content: url(/icons/dark_mode.svg);
+    width: 0;
+    height: 0;
+}
+
 .calc-display{
     min-height: 80px;
     width: 100%;
     background-color: rgb(204, 245, 213);
+    border-radius:15px ;
 }
 .row{
     display: inline-flex;
