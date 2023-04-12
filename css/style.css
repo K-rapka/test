@@ -7,7 +7,6 @@ body{
 }
 .container{
     width: 100vw;
-    height: 100vh;
     background-color: rgb(193, 193, 193);
     display: flex;
     align-items: center;
