@@ -25,6 +25,9 @@ body{
     justify-content: space-between;
     background-color: rgb(143, 232, 202);
 }
+.calc-head span{
+    user-select: none;
+}
 .calc-theme{
     display: block;
     width: 48px;
@@ -44,10 +47,14 @@ body{
 }
 
 .calc-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     min-height: 80px;
     width: 100%;
     background-color: rgb(204, 245, 213);
     border-radius:15px ;
+    margin-bottom: 5%;
 }
 .row{
     display: inline-flex;
@@ -58,9 +65,22 @@ body{
     font-size: 30px;
     background-color: rgb(143, 232, 202);
     border: none;
+    border-radius: 40px;
     width: 100%;
     min-height: 90px;
+    user-select: none;
+    
 }
 .row button:hover{
     background-color: rgb(55, 189, 128);
+}
+.input{
+    width:auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.result{
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
